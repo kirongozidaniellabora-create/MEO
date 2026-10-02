@@ -1,0 +1,24 @@
+name: diabtrack
+description: "DiabTrack — application mobile de suivi du diabète (projet MEO, ICAM B1)"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Seule dependance externe du projet : stockage local des donnees de sante.
+  # Choix assume pour minimiser le risque R3 (dependance reseau a pub.dev).
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
